@@ -29,12 +29,11 @@ public class MaxAreaCakeAfterCuts {
 		 * Changed type to long to support big size inputs
 		 * as A test case failed on leetcode 
 		 */
-		long maxDiffHorizontal = 0 , maxDiffVertical = 0 ;
 		Arrays.sort(horizontalCuts);
 		Arrays.sort(verticalCuts);
 		
-		maxDiffHorizontal = horizontalCuts[0] ;
-		maxDiffVertical = verticalCuts[0] ;
+		long maxDiffHorizontal = horizontalCuts[0] ;
+		long maxDiffVertical = verticalCuts[0] ;
 		
 		for(int i = 0 ; i < horizontalCuts.length - 1 ; i++) {
 			if ((horizontalCuts[i+1]-horizontalCuts[i]) > maxDiffHorizontal ) {
