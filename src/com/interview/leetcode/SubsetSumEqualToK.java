@@ -17,14 +17,14 @@ public class SubsetSumEqualToK {
 		System.out.println("Does Subset Sum Equal to Sum "+k+" Exists ? "+hasSubset);
 		System.out.println();
 		
-		System.out.println("------------Test Case 2-----------");
+		System.out.println("------------Test Case 3-----------");
 		int [] c = {4, 2, 5 , 1, 6 , 5 ,7 , 2};
 		k = 52 ;
 		hasSubset = ifSubsetSumExists(c , k );
 		System.out.println("Does Subset Sum Equal to Sum "+k+" Exists ? "+hasSubset);
 		System.out.println();
 		
-		System.out.println("------------Test Case 2-----------");
+		System.out.println("------------Test Case 4-----------");
 		int [] d = {4, 1, 5 , 2, 9 , 5 ,7 , 2};
 		k = 9 ;
 		hasSubset = ifSubsetSumExists(d , k );
@@ -59,12 +59,10 @@ Does Subset Sum Equal to Sum 21 Exists ? true
 Start Index :0 Right Index : 7
 Does Subset Sum Equal to Sum 32 Exists ? true
 
-------------Test Case 2-----------
+------------Test Case 3-----------
 Does Subset Sum Equal to Sum 52 Exists ? false
 
-------------Test Case 2-----------
+------------Test Case 4-----------
 Start Index :4 Right Index : 4
 Does Subset Sum Equal to Sum 9 Exists ? true
-
-
  */
