@@ -26,7 +26,7 @@ public class SubsetSumEqualToK {
 		
 		System.out.println("------------Test Case 4-----------");
 		int [] d = {4, 1, 5 , 2, 9 , 5 ,7 , 2};
-		k = 9 ;
+		k = 1 ;
 		hasSubset = ifSubsetSumExists(d , k );
 		System.out.println("Does Subset Sum Equal to Sum "+k+" Exists ? "+hasSubset);
 		System.out.println();
@@ -63,6 +63,6 @@ Does Subset Sum Equal to Sum 32 Exists ? true
 Does Subset Sum Equal to Sum 52 Exists ? false
 
 ------------Test Case 4-----------
-Start Index :4 Right Index : 4
-Does Subset Sum Equal to Sum 9 Exists ? true
+Start Index :1 Right Index : 1
+Does Subset Sum Equal to Sum 1 Exists ? true
  */
