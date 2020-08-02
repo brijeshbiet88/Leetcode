@@ -5,22 +5,30 @@ import java.util.Arrays;
 public class MaxAreaCakeAfterCuts {
 
 	public static void main(String[] args) {
+		System.out.println("----Test Case 1----");
 		int h = 8;
 		int w = 5;
 		int [] horizontalCuts = {2 ,3 ,5 , 6};
 		int [] verticalCuts   = {1 ,4};
 		
-		long p = 1000000;
-		long q = 1000000;
-		int res = (int) ((p*q)%(Math.pow(10, 9)));
-		System.out.println(res);
-		
 		System.out.println("Max Area Of Cake : "+maxArea(h, w, horizontalCuts, verticalCuts));
+		
+		System.out.println("----Test Case 2----");
+		h = 20;
+		w = 25;
+		int [] horizontalCuts2 = {10 ,20 ,15};
+		int [] verticalCuts2   = {15 ,5};
+		
+		System.out.println("Max Area Of Cake : "+maxArea(h, w, horizontalCuts2, verticalCuts2));
 		
 	}
 	
 	/*Assuming That Cuts are in the range of given height and width*/
 	public static int maxArea(int h, int w, int[] horizontalCuts, int[] verticalCuts) {
+		/*
+		 * Changed type to long to support big size inputs
+		 * as A test case failed on leetcode 
+		 */
 		long maxDiffHorizontal = 0 , maxDiffVertical = 0 ;
 		Arrays.sort(horizontalCuts);
 		Arrays.sort(verticalCuts);
@@ -54,3 +62,11 @@ public class MaxAreaCakeAfterCuts {
     }
 
 }
+/*
+----Test Case 1----
+Max Area Of Cake : 6
+----Test Case 2----
+Max Area Of Cake : 100
+
+
+ */
