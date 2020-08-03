@@ -55,3 +55,15 @@ public class ProductOfArrayExceptSelf {
 	 }
 
 }
+
+/*
+-----------Test Case 1-------------
+Array After Replacement
+120	60	40	30	24	
+-----------Test Case 2-------------
+Array After Replacement
+20	10	
+-----------Test Case 3-------------
+Array After Replacement
+300	200	150	
+ */
