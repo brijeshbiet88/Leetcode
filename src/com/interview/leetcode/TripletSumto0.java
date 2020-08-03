@@ -50,3 +50,13 @@ public class TripletSumto0 {
         
     }
 }
+
+/*
+Triplets Having Sum Equal to O :
+ -2 -1 3
+ -1 -1 2
+ -5 2 3
+ -2 0 2
+ -1 0 1
+
+ */
