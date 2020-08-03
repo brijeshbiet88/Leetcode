@@ -17,7 +17,8 @@ public class DivideWithoutDivModMulOperation {
 
 	}
 
-	/* only for positive numbers */
+	/* only for positive numbers 
+	 Can be optimized by bit shifting methods*/
 	public static int divide(int dividend, int divisor) {
 		int quotient = 0;
 		int addition = 0;
