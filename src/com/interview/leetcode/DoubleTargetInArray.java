@@ -39,3 +39,15 @@ public class DoubleTargetInArray {
 	}
 
 }
+/**
+ * -------Test Case 1 --------------
+Is there m and n such that m = 2*n : true
+
+-------Test Case 2 --------------
+Is there m and n such that m = 2*n : false
+
+-------Test Case 3 --------------
+Is there m and n such that m = 2*n : false
+
+
+ * /
