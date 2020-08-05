@@ -60,11 +60,12 @@ public class MaxLengthLimitedDiff {
 		if(nums.length == 1) {
 			return 1;
 		}
-		for(int i = 0 ; i < nums.length - maxLen ; i++) {
+		int len = nums.length;
+		for(int i = 0 ; i < len - maxLen ; i++) {
 			j = i+1;
 			int maxDiff = 0;
 			int minDiff = 0;
-			while(j < nums.length && Math.abs(nums[i] - nums[j]) <= limit 
+			while(j < len && Math.abs(nums[i] - nums[j]) <= limit 
 				&& ((maxDiff - nums [i]+ nums[j])) <= limit
 				&& (Math.abs((nums[i]-nums[j] - minDiff))) <= limit) {
 				if(nums[i] > nums[j])
