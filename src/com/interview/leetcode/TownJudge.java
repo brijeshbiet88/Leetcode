@@ -49,3 +49,13 @@ public class TownJudge {
 	    
     }
 }
+/*
+ * -------------------Test Case 1---------------
+Judge is : 3
+-------------------Test Case 2---------------
+Judge is : 1
+-------------------Test Case 3---------------
+Judge is : 3
+-------------------Test Case 4---------------
+Judge is : -1
+*/
