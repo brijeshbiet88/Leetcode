@@ -26,15 +26,15 @@ public class NumberOf1Bits {
 	}
 	
 	public static int hammingWeight(int n) {
-	    int bits = 0;
+	    int noOfBits = 0;
 	    int mask = 1;
 	    for (int i = 0; i < 32; i++) {
 	        if ((n & mask) != 0) {
-	            bits++;
+	            noOfBits++;
 	        }
 	        mask = mask << 1;
 	    }
-	    return bits;
+	    return noOfBits;
 	}
 
 }
