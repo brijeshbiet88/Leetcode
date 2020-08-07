@@ -49,13 +49,12 @@ public class WinnerOfArrayGame {
 			max = Math.max(max, arr[i]);
 			if(arr[i] > arr[j]) {
 				candidate = arr[i];
-				j = (j+1) % arr.length;
 			}
 			else {
 				candidate = arr[j];
 				i = j;
-				j = (j+1) % arr.length;
 			}
+			j = j+1 ;
 			map.put(candidate, map.getOrDefault(candidate, 0) + 1);
 			if(map.get(candidate) == k) {
 				return candidate;
