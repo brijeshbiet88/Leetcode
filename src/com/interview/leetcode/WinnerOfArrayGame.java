@@ -8,30 +8,30 @@ public class WinnerOfArrayGame {
 	System.out.println("-------------Test Case 1-----------------");
 	int [] nums1 = {2,1,3,5,4,6,7};
 	int k = 2;
-	System.out.println("Winner is : "+ getWinner(nums1, k));
+	System.out.println("Winner is : "+ getWinner2(nums1, k));
 	System.out.println();
 	
 	System.out.println("-------------Test Case 2-----------------");
 	int [] nums2 = {3,2,1};
 	k = 10;
-	System.out.println("Winner is : "+ getWinner(nums2, k));
+	System.out.println("Winner is : "+ getWinner2(nums2, k));
 	System.out.println();
 	
 	System.out.println("-------------Test Case 3-----------------");
 	int [] nums3 = {1,9,8,2,3,7,6,4,5};
 	k = 7;
-	System.out.println("Winner is : "+ getWinner(nums3, k));
+	System.out.println("Winner is : "+ getWinner2(nums3, k));
 	System.out.println();
 	System.out.println("-------------Test Case 4-----------------");
 	int [] nums4 = {1,11,22,33,44,55,66,77,88,99};
 	k = 1000000000;
-	System.out.println("Winner is : "+ getWinner(nums4, k));
+	System.out.println("Winner is : "+ getWinner2(nums4, k));
 	System.out.println();
 	
 	System.out.println("-------------Test Case 5-----------------");
 	int [] nums5 = {1,25,68,35,42,70};
 	k = 3;
-	System.out.println("Winner is : "+ getWinner(nums5, k));
+	System.out.println("Winner is : "+ getWinner2(nums5, k));
 	System.out.println();
 	
 	}
@@ -64,6 +64,18 @@ public class WinnerOfArrayGame {
 		}
 		max = Math.max(max, arr[arr.length-1]);
 		return max;
+    }
+	
+	public static int getWinner2(int[] A, int k) {
+        int max = A[0], win = 0;
+        for (int i = 1; i < A.length; ++i) {
+            if (A[i] > max) {
+                max = A[i];
+                win = 0;
+            }
+            if (++win == k) break;
+        }
+        return max;
     }
 }
 /*
