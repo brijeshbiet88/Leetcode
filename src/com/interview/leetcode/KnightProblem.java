@@ -127,3 +127,18 @@ public class KnightProblem {
 	}
 
 }
+/*
+ ----------------Test Case 1-------------------
+Minimum Moves to Reach Target : 7,7 from 0,0 : 6
+
+----------------Test Case 2-------------------
+Minimum Moves to Reach Target : 0,0 from 7,7 : 6
+
+----------------Test Case 3-------------------
+Minimum Moves to Reach Target : 3,4 from 3,4 : 0
+
+----------------Test Case 4-------------------
+Minimum Moves to Reach Target : 2,3 from 0,1 : 4
+
+
+ */
