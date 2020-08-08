@@ -25,9 +25,8 @@ public class RatMazeProblem {
 		
 		System.out.println(" ----------------Test Case 2-----------------");
 		int [][] maze2 = {
-				           {0 ,1 , 0 }, 
-				           {0 ,0 , 1 }, 
-				           {1 ,1 , 0 },   
+				           {0 ,1 }, 
+				           {0 ,0 },   
 		                  };
 		 
 		row = maze2.length;
