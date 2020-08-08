@@ -29,21 +29,15 @@ public class MinimumCostToMoveChips {
 	public static int minCostToMoveChips(int[] chips) {
 		int oddCost = 0;
 		int evenCost = 0;
-		Map<Integer, Integer> map = new HashMap<>();
+		
 		for (int i = 0; i < chips.length; i++) {
-			map.put(chips[i], map.getOrDefault(chips[i], 0) + 1);
-		}
-
-		Iterator<Integer> itr = map.keySet().iterator();
-		while (itr.hasNext()) {
-			int key = itr.next();
-			int value = map.get(key);
-			if(key % 2 == 0) {
-				evenCost += value;
+			if(chips[i] %2 == 0) {
+				evenCost++;
 			}else {
-				oddCost += value;
+				oddCost++;
 			}
 		}
+
 
 		return evenCost > oddCost ? oddCost : evenCost;
 
