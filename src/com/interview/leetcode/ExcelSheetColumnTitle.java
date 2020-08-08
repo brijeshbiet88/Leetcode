@@ -55,3 +55,22 @@ public class ExcelSheetColumnTitle {
 	}
 
 }
+
+/*
+----------------Test Case 1-----------------
+Integer Number 50 in Excel Sheet : AX
+
+----------------Test Case 2-----------------
+Integer Number 1048 in Excel Sheet : ANH
+
+----------------Test Case 3-----------------
+Integer Number 26 in Excel Sheet : Z
+
+----------------Test Case 4-----------------
+Integer Number 2600 in Excel Sheet : CUZ
+
+----------------Test Case 5-----------------
+Integer Number 103 in Excel Sheet : CY
+
+
+ * */
