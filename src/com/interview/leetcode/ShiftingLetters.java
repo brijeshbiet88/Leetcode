@@ -26,7 +26,7 @@ public class ShiftingLetters {
 		
 		System.out.println("---------------Test Case 3----------------");
 		s = "sad";
-		int [] shifts4 = {19 , 22 ,21};
+		int [] shifts4 = {2147483643 , 2147483646 ,2147483645};
 		shiftedString = shiftingLetters(s, shifts4);
 		System.out.println("Original String :"+s+" , Rotated String : "+shiftedString);
 		System.out.println();
