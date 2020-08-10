@@ -4,7 +4,7 @@ public class NumberToWords {
 
 	public static void main(String[] args) {
 		System.out.println("---------------Test Case 1--------------");
-		int num = 12434598;
+		int num = 2147483647;
 		String word = numberToWords(num);
 		System.out.println("Number : "+num+" in words : "+word);
 		System.out.println();
@@ -136,3 +136,23 @@ public class NumberToWords {
 	}
 
 }
+/*
+---------------Test Case 1--------------
+Number : 2147483647 in words : Two Billion One Hundred Forty Seven Million Four Hundred Eighty Three Thousand Six Hundred Forty Seven
+
+---------------Test Case 2--------------
+Number : 7110 in words : Seven Thousand One Hundred Ten
+
+---------------Test Case 3--------------
+Number : 999 in words : Nine Hundred Ninety Nine
+
+---------------Test Case 4--------------
+Number : 100000 in words : One Hundred Thousand
+
+---------------Test Case 5--------------
+Number : 10000 in words : Ten Thousand
+
+---------------Test Case 6--------------
+Number : 2147483647 in words : Two Billion One Hundred Forty Seven Million Four Hundred Eighty Three Thousand Six Hundred Forty Seven
+
+ * */
