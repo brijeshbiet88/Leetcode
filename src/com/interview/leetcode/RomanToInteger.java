@@ -4,7 +4,7 @@ public class RomanToInteger {
 
 	public static void main(String[] args) {
 		System.out.println("----------------Test Case 1---------------");
-		String roman = "MCMXCIV";
+		String roman = "MMCMXCIV";
 		int decimal = romanToInt(roman);
 	    System.out.println("Decimal Representation of Roman :"+roman+" is : "+decimal);
 	    System.out.println();
