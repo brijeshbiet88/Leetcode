@@ -9,6 +9,29 @@ public class MultiplyString {
 		String product = multiply(num1, num2);
 		System.out.println("Product of "+num1+" & "+num2+" = "+product);
 		
+		System.out.println("------------------Test Case 2---------------");
+		num1 = "19";
+		num2 = "19";
+		product = multiply(num1, num2);
+		System.out.println("Product of "+num1+" & "+num2+" = "+product);
+		
+		System.out.println("------------------Test Case 3---------------");
+		num1 = "40";
+		num2 = "25";
+		product = multiply(num1, num2);
+		System.out.println("Product of "+num1+" & "+num2+" = "+product);
+
+		System.out.println("------------------Test Case 3---------------");
+		num1 = "440";
+		num2 = "245";
+		product = multiply(num1, num2);
+		System.out.println("Product of "+num1+" & "+num2+" = "+product);
+		
+		System.out.println("------------------Test Case 3---------------");
+		num1 = "40989809";
+		num2 = "258880808";
+		product = multiply(num1, num2);
+		System.out.println("Product of "+num1+" & "+num2+" = "+product);
 
 	}
 	
@@ -107,3 +130,16 @@ public class MultiplyString {
 	}
 
 }
+/*
+ ------------------Test Case 1---------------
+Product of 9 & 9 = 81
+------------------Test Case 2---------------
+Product of 19 & 19 = 361
+------------------Test Case 3---------------
+Product of 40 & 25 = 1000
+------------------Test Case 3---------------
+Product of 440 & 245 = 107800
+------------------Test Case 3---------------
+Product of 40989809 & 258880808 = 10611474873685672
+
+ */
