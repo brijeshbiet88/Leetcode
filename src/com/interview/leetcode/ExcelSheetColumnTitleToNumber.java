@@ -20,12 +20,12 @@ public class ExcelSheetColumnTitleToNumber {
 		
 		System.out.println("----------------Test Case 4-----------------");
 		title = "ANH";
-		System.out.println("Title "+title +" in Excel Sheet : "+titleToNumber(title));
+		System.out.println("Title "+title +" in Excel Sheet : "+titleToNumber2(title));
 		System.out.println();
 		
 		System.out.println("----------------Test Case 5-----------------");
 		title = "AX";
-		System.out.println("Title "+title +" in Excel Sheet : "+titleToNumber(title));
+		System.out.println("Title "+title +" in Excel Sheet : "+titleToNumber2(title));
 		System.out.println();
 
 	}
@@ -38,6 +38,11 @@ public class ExcelSheetColumnTitleToNumber {
 			num += Math.pow(base, pow++)*c;
 		}
 		return num;
+	}
+	
+	private static int titleToNumber2(String title) {
+		
+		return title.chars().reduce(0, (result , ch)-> result*26 + (ch -'A'+1));
 	}
 
 }
