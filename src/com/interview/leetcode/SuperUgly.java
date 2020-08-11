@@ -20,8 +20,8 @@ public class SuperUgly {
 		System.out.println();
 		
 		System.out.println("---------------Test Case3---------------");
-		n = 6;
-		int [] primes3 = {2 , 5 , 7 , 11};
+		n = 10;
+		int [] primes3 = {2 , 5  , 11};
 		
 		nthUglyNum = nthSuperUglyNumber(n, primes3);
 		System.out.println("Nth SuperUgly Number : "+nthUglyNum);
@@ -45,7 +45,8 @@ public class SuperUgly {
 		for (int i = 1; i < n; i++) {
 			int min = Integer.MAX_VALUE;
 			for (int j = 0; j < primes.length; j++) {
-				min = Math.min(min, primes[j] * result[frequency[j]]);
+				int frequecyOfJthPrime = frequency[j];
+				min = Math.min(min, primes[j] * result[frequecyOfJthPrime]);
 			}
 
 			result[i] = min;
