@@ -11,11 +11,27 @@ public class SuperUgly {
 		System.out.println("Nth SuperUgly Number : "+nthUglyNum);
 		System.out.println();
 		
-		System.out.println("---------------Test Case1---------------");
-		n = 2;
-		int [] primes2 = {2 , 7 , 13 , 19};
+		System.out.println("---------------Test Case2---------------");
+		n = 12;
+		int [] primes2 = {2 , 7 , 13 };
 		
 		nthUglyNum = nthSuperUglyNumber(n, primes2);
+		System.out.println("Nth SuperUgly Number : "+nthUglyNum);
+		System.out.println();
+		
+		System.out.println("---------------Test Case3---------------");
+		n = 6;
+		int [] primes3 = {2 , 5 , 7 , 11};
+		
+		nthUglyNum = nthSuperUglyNumber(n, primes3);
+		System.out.println("Nth SuperUgly Number : "+nthUglyNum);
+		System.out.println();
+		
+		System.out.println("---------------Test Case4---------------");
+		n = 9;
+		int [] primes4 = {3 , 11 , 13};
+		
+		nthUglyNum = nthSuperUglyNumber(n, primes4);
 		System.out.println("Nth SuperUgly Number : "+nthUglyNum);
 		System.out.println();
 
@@ -46,3 +62,17 @@ public class SuperUgly {
 	}
 
 }
+/*
+---------------Test Case1---------------
+Nth SuperUgly Number : 32
+
+---------------Test Case2---------------
+Nth SuperUgly Number : 49
+
+---------------Test Case3---------------
+Nth SuperUgly Number : 8
+
+---------------Test Case4---------------
+Nth SuperUgly Number : 81
+
+ * */
