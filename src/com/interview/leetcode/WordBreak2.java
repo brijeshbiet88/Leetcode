@@ -15,7 +15,7 @@ public class WordBreak2 {
 		List<String> wordDict = Arrays.asList(dictionary);
 		List<String> validWords = wordBreak(s, wordDict);
 		System.out.println("Valid Dictionary Words : ");
-		validWords.forEach(word->System.out.print(word+" "));
+		validWords.forEach(word->System.out.println(word+" "));
 		validWords.clear();
 		System.out.println();
 		
@@ -25,7 +25,7 @@ public class WordBreak2 {
 		List<String> wordDict2 = Arrays.asList(dictionary2);
 		validWords = wordBreak(s, wordDict2);
 		System.out.println("Valid Dictionary Words : ");
-		validWords.forEach(word->System.out.print(word+" "));
+		validWords.forEach(word->System.out.println(word+" "));
 		validWords.clear();
 		System.out.println();
 		
@@ -35,7 +35,7 @@ public class WordBreak2 {
 		List<String>wordDict3 = Arrays.asList(dictionary3);
 		validWords = wordBreak(s, wordDict3);
 		System.out.println("Valid Dictionary Words : ");
-		validWords.forEach(word->System.out.print(word+" "));
+		validWords.forEach(word->System.out.println(word+" "));
 		System.out.println();
 
 	}
@@ -69,10 +69,16 @@ public class WordBreak2 {
 /*
 ------------------Test Case 1-------------------
 Valid Dictionary Words : 
-cat sand dog cats and dog 
+cat sand dog 
+cats and dog 
+
 ------------------Test Case 2-------------------
 Valid Dictionary Words : 
-pine apple pen apple pine applepen apple pineapple pen apple 
+pine apple pen apple 
+pine applepen apple 
+pineapple pen apple 
+
 ------------------Test Case 3-------------------
 Valid Dictionary Words : 
+
  * */
