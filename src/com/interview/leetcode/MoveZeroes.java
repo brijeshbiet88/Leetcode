@@ -88,3 +88,28 @@ public class MoveZeroes {
     }
 
 }
+
+/*
+----------------Test Case 1---------------
+Original Array
+1 2 3 12 
+Array After Moving 0's
+1 2 3 12 
+----------------Test Case 2---------------
+Original Array
+0 0 4 6 8 0 0 
+Array After Moving 0's
+4 6 8 0 0 0 0 
+----------------Test Case 3---------------
+Original Array
+4 2 4 0 0 3 0 5 1 0 
+Array After Moving 0's
+4 2 4 3 5 1 0 0 0 0 
+----------------Test Case 4---------------
+Original Array
+1 0 3 12 0 
+Array After Moving 0's
+1 3 12 0 0 
+
+ */
+
