@@ -16,7 +16,7 @@ public class SearchInRowColSortedMatrix {
 			for (int j = 0; j < matrix[0].length; j++) {
 				System.out.println("----------------Test Case " + count++ + "----------------");
 				target = matrix[i][j];
-				boolean found = searchMatrix(matrix, target);
+				boolean found = searchMatrix2(matrix, target);
 				System.out.println("Is Element " + target + " Found : " + found);
 				System.out.println();
 			}
@@ -96,6 +96,26 @@ public class SearchInRowColSortedMatrix {
 		return false;
 	        
 	}
+	
+	public static boolean searchMatrix2(int[][] matrix, int target) {
+		int m = matrix.length;
+		if(m == 0)
+	        return false;
+		int n = matrix[0].length;
+		int i = 0 , j = n-1; 
+		while(i < m && j >=0) {
+			
+			if(matrix[i][j] == target)
+				return true;
+			if(matrix[i][j] < target) {
+				i++;
+			}else if(matrix[i][j] > target) {
+				j--;
+			}
+		}
+		return false;
+		
+	}
 
 }
 
@@ -172,4 +192,5 @@ Is Element 12 Found : false
 ----------------Test Case24----------------
 Is Element 12 Found : false
 
- */
+
+*/
