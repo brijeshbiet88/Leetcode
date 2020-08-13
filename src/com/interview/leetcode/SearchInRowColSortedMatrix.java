@@ -75,6 +75,9 @@ public class SearchInRowColSortedMatrix {
 		}
 		
 		for(int i = targetRow ; i < m ; i++) {
+			if(n > 0 && matrix[i][0] > target) {
+				return false;
+			}
 		first = 0 ; last = n-1;
 		while(first <= last) {
 			mid = first + (last - first)/2;
