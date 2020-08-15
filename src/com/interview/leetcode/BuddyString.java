@@ -34,7 +34,7 @@ public class BuddyString {
 		System.out.println("Are Strings "+A+" and "+B+" buddy Strings : "+buddy);
 		System.out.println();
 		
-		System.out.println("----------------Test Case 4-----------------");
+		System.out.println("----------------Test Case 5-----------------");
 		A = "abab";
 		B = "abab";
 		buddy = buddyStrings(A, B);
@@ -47,7 +47,7 @@ public class BuddyString {
 		 int diff = 0;
 		 int count = 0;
 		 Set<Character> set = new HashSet<Character>();
-		 if(A.length() != B.length() || A.isEmpty()) {
+		 if(A.length() != B.length() || A.length() < 2) {
 			 return false;
 		 }
 		 
@@ -83,6 +83,6 @@ Are Strings aa and aa buddy Strings : true
 ----------------Test Case 4-----------------
 Are Strings  and  buddy Strings : false
 
-----------------Test Case 4-----------------
+----------------Test Case 5-----------------
 Are Strings abab and abab buddy Strings : true
  * */
