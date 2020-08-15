@@ -62,3 +62,20 @@ public class ValidMountainArray {
 		 return up?false:true;
 	 }
 }
+/*
+ --------------Test Case 1----------------
+Valid Mountain Array : true
+
+--------------Test Case 2----------------
+Valid Mountain Array : false
+
+--------------Test Case 3----------------
+Valid Mountain Array : true
+
+--------------Test Case 4----------------
+Valid Mountain Array : false
+
+--------------Test Case 5----------------
+Valid Mountain Array : false
+
+ * */
