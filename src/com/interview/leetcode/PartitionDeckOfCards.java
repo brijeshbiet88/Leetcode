@@ -86,3 +86,23 @@ public class PartitionDeckOfCards {
 	}
 
 }
+/*
+--------------Test Case 1---------------
+Is Partition x Possible where x >= 2 : true
+
+--------------Test Case 2---------------
+Is Partition x Possible where x >= 2 : false
+
+--------------Test Case 3---------------
+Is Partition x Possible where x >= 2 : false
+
+--------------Test Case 4---------------
+Is Partition x Possible where x >= 2 : true
+
+--------------Test Case 5---------------
+Is Partition x Possible where x >= 2 : true
+
+--------------Test Case 6---------------
+Is Partition x Possible where x >= 2 : true
+
+ * */
