@@ -3,6 +3,7 @@ package com.interview.leetcode;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
+import java.util.TreeMap;
 
 public class LuckyInteger {
 
@@ -43,7 +44,7 @@ public class LuckyInteger {
 
 	public static int findLucky(int[] arr) {
 		int luckyInt = -1;
-		Map<Integer, Integer> map = new HashMap<>();
+		Map<Integer, Integer> map = new TreeMap<>((a,b)->b-a);
 		for(int key : arr) {
 			map.put(key, map.getOrDefault(key, 0)+1);
 		}
@@ -52,7 +53,7 @@ public class LuckyInteger {
 		while(itr.hasNext()) {
 			int key = itr.next();
 			if(map.get(key) == key) {
-				luckyInt = Math.max(luckyInt, key);
+				return key;
 			}
 			
 		}
