@@ -23,44 +23,31 @@ public class ReverseOnlyLetters {
 		System.out.println();
 	}
 
-	public static String reverseOnlyLetters(String S) {
-		StringBuilder sb = new StringBuilder();
-		char[] strArr = S.toCharArray();
-		int r = strArr.length - 1, l = 0;
+	 public static String reverseOnlyLetters(String S) {
+		 StringBuilder sb = new StringBuilder();
+			char[] strArr = S.toCharArray();
+			int r = strArr.length - 1, l = 0;
 
-		while (l < r) {
+			while (l < r) {
 
-			if (!Character.isAlphabetic(strArr[l]))
-				l++;
-			else if (!Character.isAlphabetic(strArr[r]))
-				r--;
+				if (!Character.isAlphabetic(strArr[l]))
+					l++;
+				else if (!Character.isAlphabetic(strArr[r]))
+					r--;
 
-			else {
-				char tmp = strArr[l];
-				strArr[l] = strArr[r];
-				strArr[r] = tmp;
-				l++;
-				r--;
+				else {
+					char tmp = strArr[l];
+					strArr[l] = strArr[r];
+					strArr[r] = tmp;
+					l++;
+					r--;
+				}
 			}
-		}
-		
-		for(char c : strArr) {
-			sb.append(c);
-		}
 
-		return sb.toString();
-	}
+			for(char c : strArr) {
+				sb.append(c);
+			}
+
+			return sb.toString();   
+	 }
 }
-
-/*
- ----------------Test Case 1------------------------
-String a-bC-dEf-ghIj after reversing Letters j-Ih-gfE-dCba
-
-----------------Test Case 2------------------------
-String Test1ng-Leet=code-Q! after reversing Letters Qedo1ct-eeLg=ntse-T!
-
-----------------Test Case 3------------------------
-String A-B-C!! after reversing Letters C-B-A!!
-
-
- * */
