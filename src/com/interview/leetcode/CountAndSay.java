@@ -5,7 +5,7 @@ public class CountAndSay {
 	public static void main(String[] args) {
 		System.out.println("----------Test Case 1 -----------------");
 		System.out.println("Using Recursion");
-		for(int n = 1; n <= 10 ; n++) {
+		for(int n = 1; n <= 15 ; n++) {
 			System.out.println(countAndSay(n));
 		}
 		System.out.println();

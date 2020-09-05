@@ -69,6 +69,25 @@ public class PartitionLabels {
 	}
 		return list;
 	}
+	
+	public static List<Integer> partitionLabels2(String S) {
+		List<Integer> list = new ArrayList<Integer>();
+		int[] lastIndex = new int[26];
+		for (int i = 0; i < S.length(); i++) {
+			lastIndex[S.charAt(i) - 'a'] = i;
+		}
+		int j = 0, start = 0;
+
+		for (int i = 0; i < S.length(); i++) {
+			j = Math.max(j, lastIndex[S.charAt(i) - 'a']);
+
+			if (i == j) {
+				list.add(i - start + 1);
+				start = i + 1;
+			}
+		}
+		return list;
+	}
 }
 
 /*
