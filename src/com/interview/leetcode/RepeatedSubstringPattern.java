@@ -28,7 +28,7 @@ public class RepeatedSubstringPattern {
 		System.out.println();
 		
 		System.out.println("---------------Test Case 5-----------------");
-		s = "pepe";
+		s = "apeapeape";
 		subStr = repeatedSubstringPattern(s);
 		System.out.println("Is Repeted Substring Possible for String "+s+" : "+subStr);
 		System.out.println();
